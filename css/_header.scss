@@ -1,0 +1,65 @@
+
+/*header-css*/
+header{
+    padding: 20px 0;
+    nav{
+        a{
+            img{}
+        }
+        .navbar-toggler{
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        .offcanvas-end{
+            @media(max-width: $media-mb-l){
+                width: 300px;
+            }
+        }
+        .offcanvas{
+            .offcanvas-header{
+                h2{
+                    
+                    @extend%h2;
+                }
+
+            }
+            .offcanvas-body{
+                ul{
+                    li{
+                        @media(max-width: $media-md){
+                            margin-bottom: 15px !important;
+                        }
+
+                        a{
+                            color: $dark-gray !important;
+                            display: inline-block;
+                            padding: 0 !important;
+                            margin: 0 20px !important;
+                            font-size: 16px;
+                            font-weight: 700;
+                            position: relative;
+
+
+                            &::after{
+                                @extend%hoverline;
+                                bottom: -5px;
+                                transform-origin: right;
+                                transform: scaleX(0);
+                                transition: transform .3s ease-in;
+
+                            }
+                            &:hover{
+                                &:hover::after{
+                                    transform: scaleX(1);
+                                    transform-origin: left;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

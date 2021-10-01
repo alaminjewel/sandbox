@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&display=swap');
+
+@import 'variables'; 
+@import 'extend';
+@import 'header';
+@import 'banner-section';
+@import 'service';
+@import 'seo';
+@import 'strategy';
+@import 'choose';
+@import 'team';
+@import 'solution';
+@import 'testimonial';
+@import 'join';
+@import 'carousel';
+@import 'footer';
+
+body{
+    font-family: 'Sarabun', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#button {
+    i{
+        font-size: 30px;
+        font-weight: bolder;
+        
+        &::before{
+            background-color: $orange;
+            padding: 10px;
+            border-radius: 50%;
+        } 
+    }
+
+    display: inline-block;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    color: $dark-blue;
+    z-index: 2000;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $light-yellow;
+    }
+    &:active {
+        background-color: $orange;
+        overflow: hidden;
+    }
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+
+
+
+

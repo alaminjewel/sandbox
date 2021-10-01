@@ -1,0 +1,54 @@
+
+/*banner-css*/
+
+.banner-section{
+    padding: 60px 0;
+
+    @media(max-width: $media-xs){
+        padding: 40px 0;
+    }
+    
+    .img{
+        padding: 20px 50px 20px 0;
+        
+        //media query
+        @media(max-width: $media-md){
+            padding: 10px 30px 10px 0;
+        }
+        @media(max-width: $media-xs){
+            padding: 0 30px;
+        }
+        
+
+        img{}
+    }
+    .txt{
+            //media query
+            @media(max-width: $media-md){
+                text-align: center;
+                margin-top:30px;
+            }
+
+            @media(max-width: $media-xs){
+                width: 80%;
+                margin: auto;
+                margin-top: 30px;
+            }
+
+        h1{
+            @extend%h1;
+        }
+        p{
+            @extend%p;
+            padding: 20px 0;
+            
+            //media query
+            @media(max-width: $media-md){
+                padding: 15px 0;
+            }
+        }
+        a{
+            @extend%btn;
+        }
+    }
+}

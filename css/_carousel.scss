@@ -1,0 +1,27 @@
+
+/*carousel section css*/
+.carousel-section{
+    text-align: center;
+    padding: 60px 0;
+    
+    @media(max-width: $media-xs){
+        padding: 40px 0;
+    }
+
+    .owl-carousel .owl-stage{
+        display: flex;
+        align-items: center;
+    }
+    
+    .owl-carousel .owl-item{
+        text-align: center;
+        img {
+            width: 60%;
+            margin: auto;
+        }
+    }
+    .owl-dots{
+        display: none;
+    }
+
+}
